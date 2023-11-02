@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   background-color: rgb(16, 16, 16);
+  position: relative;
 }
 
 .content {
@@ -34,7 +35,6 @@
   color: #F5F5F5;
   height: 400px;
   width: 260px;
-  /* border: 1px solid #21209C; */
   border-radius: 10px;
   margin: 20px 5px;
   padding: 15px 30px 3px 30px;
@@ -95,7 +95,6 @@
 
 
 .formabs {
-  box-sizing: border-box;
   position: fixed;
   top: 5px;
   right: 25px;
@@ -109,7 +108,6 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  top: 10px;
   box-shadow: 3px 3px 4px #21209C;
 }
 
@@ -150,6 +148,15 @@
 
 @media  (max-width: 1200px){
   .formabs {
-    position: static;
+    position: absolute;
+    bottom: 10px;
+    top: unset;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .content {
+    padding-bottom: 260px;
   }
 }

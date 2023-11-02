@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div className='overlay'>
-      <Forma onNewPost={(post)=>{setPosti([...posti, post]);}}/>
+        <Forma onNewPost={(post)=>{setPosti([...posti, post]);}}/>
         <PostList posti={posti} />
       </div>  
     </div>
